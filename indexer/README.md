@@ -13,9 +13,9 @@
 
 2. It's recommended to use Anaconda Distribution for Python. If you don't have one, download from this from [here](https://www.anaconda.com/distribution/). Create a conda environment. 
 
-```
-conda create -n vison
-```
+   ```
+   conda create -n vison
+   ```
 
 3. We have used `flask` to build python server. `flask_wtf` is used as a flask extension to `WTforms` library. Install the following packages. 
 
