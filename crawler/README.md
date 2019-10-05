@@ -9,7 +9,7 @@
 After succesfull installation. Move to the vison directory.
 Create a sqlite database as follows:
 ```bash
-    $ cd vison
+    $ cd crawler
     $ sqlite3
 ```
 After this you will be able to execute sqlite3 commands from the terminal
