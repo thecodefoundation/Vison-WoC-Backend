@@ -1,0 +1,6 @@
+*.wav
+.ipynb_checkpoints/
+*.pyc
+indexer/yolo/yolo-coco
+indexer/yolo/yolo-coco-tiny
+indexer/yolo/yolo-coco-500

@@ -75,11 +75,12 @@ def insert_into_table(connection, out):
 ############## Change this path##########
 #########################################
 imgPath = 'E:/theCodeFoundation/open_source_images/images_set1/set1/'
+
 images = os.listdir(imgPath)
 count = 20
 connection = establish_connection()
 
-for image in images[20:]:
+for image in images:
 	if count==100:
 		close_connection(connection)
 		break
