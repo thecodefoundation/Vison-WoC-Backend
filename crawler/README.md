@@ -6,7 +6,7 @@
 - Packages needed
 1. Scrapy - <a href="https://docs.scrapy.org/en/latest/intro/install.html">here</a>
 
-After succesfull installation. Move to the vison directory.
+After succesfull installation. Move to the `Vison-WoC-Backend` directory.
 Create a sqlite database as follows:
 ```bash
     $ cd crawler
