@@ -41,7 +41,7 @@
    pip install opencv-python / conda install opencv
    ```
 
-5. The `YOLO` object detection is using this pretrained weights on 80 classes. Download the following zip file from [here](https://drive.google.com/file/d/1lgA32mpDNcbkPxpE8ISJugAAdStx9JkV/view?usp=sharing).  Once it's downloaded do `extract to this folder`  and copy the folder named `yolo-coco` to `img_indexing_util/yolo`. 
+5. The `YOLO` object detection is using this pretrained weights on 80 classes. Download the following zip file from [here](https://drive.google.com/file/d/1lgA32mpDNcbkPxpE8ISJugAAdStx9JkV/view?usp=sharing).  Once it's downloaded do `extract to this folder`  and copy the folder named `yolo-coco` to `indexer/yolo`. 
 
 6. The most important thing to an image indexer is image itself. We used Google's open image dataset extended. Download the dataset from [here](https://storage.googleapis.com/openimages/web/extended.html). Download `set 1` along with `image id's` and `image labels`. In the `indexImages.py` script make sure to change the path to images. 
 
