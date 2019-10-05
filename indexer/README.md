@@ -4,7 +4,6 @@
 
 1. This will be a simple guide to set things up so that you can contribute to this project. 
 2. As of now everything will run locally and the paths are absolute. So you may face some issues but we have tried our best to make this proof of concept modular and easy to build upon.
-3. We shall shift to some cloud service soon. (That will further smoothen the process.)
 
 > This README is focused on simple image indexer and some suggestions to improve the current state. 
 
