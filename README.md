@@ -37,6 +37,6 @@ The Code Foundation is going all out with "The Vison" which enables quick search
 Happy Searching :D
 
 ### Todo
-1. Crawler
-    [-] Update sqlite to postgresql: We want to store the data in a psql database instead of a sqlite database.
-    [-] Avoid repetition of links: If links visited by the crawler are repeated, the crawler can fall into an infinite trap. If a link is already visited then it must be skipped.
+1. Crawler: <br>
+    - [ ] Update sqlite to postgresql: We want to store the data in a psql database instead of a sqlite database.<br>
+    - [ ] Avoid repetition of links: If links visited by the crawler are repeated, the crawler can fall into an infinite trap. If a link is already visited then it must be skipped.
