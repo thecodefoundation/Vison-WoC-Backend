@@ -1,4 +1,8 @@
-# Vison-WoC-Backend
+# VISON
+
+![poster](https://github.com/thecodefoundation/Vison-WoC-Backend/blob/master/asset/poster.jpeg)
+
+## Vison-WoC-Backend
 
 Repository for Vison Backened for Winter of Code 2019.
 
@@ -46,6 +50,18 @@ The Code Foundation is going all out with "The Vison" which enables quick search
     - [ ] Build image indexing algorithm and search algorithm for easy and quick retrieval of relevant data for the input seach query. 
     
 3. Flask Server:
-    - [ ] The Vison UI require a flask server to receive search query, image file, video or link. The server then should send relevant search result to the UI. A example flask server can be found in the `indexer` dir. 
+    - [ ] The Vison UI require a flask server to receive search query, image file, video or link. The server then should send relevant search result to the UI. A example flask server can be found in the `indexer` dir.
+    
+### How to contact us:
+
+In the initial bonding period you can talk to the mentors and clear any doubt that you may have regarding the project. Head over to the official slack workspace for The Code Foundation and join our channel `#winterofcode` [here](https://tinyurl.com/tcf-woc19). In case of any doubts hit us up on slack and we will get back to you.
+
+### Mentors: 
+
+| Name | Github |
+| -- | -- |
+| Ayush Thakur | [ayulockin](https://github.com/ayulockin) |
+| Sunita Sen | [sunitasen](https://github.com/sunitasen) |
+
     
 Happy Searching :D
