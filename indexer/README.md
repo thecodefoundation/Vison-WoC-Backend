@@ -56,12 +56,11 @@ We have tried listing all the requirements. In case something is left out do rai
 ### Steps
  
 1. Once everything is ready. Fire your PostgreSQL server. Name the database as `vision_demo_indexdb`. Go to `indexer/postgresqlDB` and run `testConnection.py` . You will encounter an error while establishing your connection with PostgreSQL. Open the script and change the password in the 4th line of the script. This password is the one which you were asked to set while installing PostgreSQL. Make sure to change the password in all the subsequent scripts. (Sorry for inconvenience. I will create a friendly module to save you from this hassle.)
-2. Run `createTable.py` . This will create the table named `image_index`. 
-3. Run `addColumns.py`. This will add all the classes that yolo is trained on as the column to `image_index`.
-4. Go to `indexer/yolo` and run `indexImages.py`. To do so use the following command line command `python indexImages.py -y yolo-coco -b False`. Make sure to change the image path to the downloaded dataset. (`imgPath` ) Your database will be populated with data. 
-5. Finally run `app.py`. To do so use the following command `python app.py -y yolo-coco -b False`. This will fire your flask server. Go to your browser and type `localhost:5000` on the URL box. You will find a simple form. ![](yolo/images/index.png)
+2. Run `createTableAddCol.py` . This will create the table named `image_index` and  will add all the classes that yolo is trained on as the column to `image_index`. 
+3. Go to `indexer/yolo` and run `indexImages.py`. To do so use the following command line command `python indexImages.py -y yolo-coco -b False`. Make sure to change the image path to the downloaded dataset. (`imgPath` ) Your database will be populated with data. 
+4. Finally run `app.py`. To do so use the following command `python app.py -y yolo-coco -b False`. This will fire your flask server. Go to your browser and type `localhost:5000` on the URL box. You will find a simple form. ![](yolo/images/index.png)
 
-6. Type in something like `person` or `cat` or `toothbrush` and you may get dummy links like. ![](yolo/images/search.png)
+5. Type in something like `person` or `cat` or `toothbrush` and you may get dummy links like. ![](yolo/images/search.png)
 
 ### To be done
 
