@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.spiders import CrawlSpider
-import sqlite3
+import psycopg2
 
 class VisonspiderSpider(scrapy.Spider):
     name = 'visonSpider'
@@ -9,8 +9,16 @@ class VisonspiderSpider(scrapy.Spider):
 
     def parse(self, response):
         # Cursor for the db
-        conn = sqlite3.connect('vison.db')
-        c = conn.cursor()
+        
+        conn = psycopg2.connect(
+            host = "127.0.0.1",
+            database = "vison",
+            user = "postgres",
+            password = "9681"
+        )
+        
+        cur = conn.cursor()
+        
         # Set default meta information for first page
         from_url = ''
         from_text = ''
@@ -27,7 +35,9 @@ class VisonspiderSpider(scrapy.Spider):
         # current page, and what was the text of the link
         self.start_urls.append(response.url)
         print(depth, response.url, '<-', from_url, from_text, sep=' ')
-        c.execute("INSERT INTO urls VALUES (?,?);", (response.url,1))
+        
+        cur.execute("INSERT INTO urls VALUES (%s,%s);", (response.url,1))
+        
         conn.commit()
         conn.close()
         page = response.url.split("/")[-2]
