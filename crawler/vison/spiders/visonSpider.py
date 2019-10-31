@@ -64,6 +64,8 @@ class VisonspiderSpider(scrapy.Spider):
 
             if len(prevLinks) == 0:
                 prevLinks = nextLinks.copy()
+                link = nextLinks[0]
+                request = response.follow(link, callback=self.parse)
             else:
 
                 if response.url in nextLinks:
