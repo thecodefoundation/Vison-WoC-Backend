@@ -2,7 +2,7 @@
 
 - Downloads
 
-    1.Sqlite - [here](https://www.postgresql.org/download/) (make sure to add it to your path)
+    1.PostgreSQL - [here](https://www.postgresql.org/download/) (make sure to add it to your path)
 
 - Packages needed
 
