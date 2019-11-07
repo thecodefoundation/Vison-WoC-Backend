@@ -47,3 +47,12 @@ class VisonspiderSpider(scrapy.Spider):
             # Meta information: depth of the link
             request.meta['depth'] = depth + 1
             yield request
+
+        # For Crawling multiple pages
+        NEXT_PAGE_SELECTOR = '.next a ::attr(href)'
+        next_page = response.css(NEXT_PAGE_SELECTOR).extract_first()
+        if next_page:
+            yield scrapy.Request(
+                response.urljoin(next_page),
+                callback=self.parse
+            )
